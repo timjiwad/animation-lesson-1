@@ -1,0 +1,42 @@
+body{
+    display: grid;
+    place-items: center ;
+    height: 100vh;
+}
+
+.item{
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+    background-color: #aaa;
+    animation: slide 4s infinite;
+animation-timing-function: linear;
+
+}
+
+@keyframes slide {
+    0%{
+        position:absolute;
+        left:0;
+        top:0;
+    }
+    50%{
+        position: absolute;
+        left: 700px;
+        top: 400px;
+    }
+    100%{
+        position:absolute;
+        left:0;
+        top:0;
+    }
+    
+}
+@keyframes spin{
+
+
+    to{
+        transform:rotate(360deg);
+    }
+    
+}
